@@ -1,4 +1,6 @@
-import Link from "next/link"
+import React from "react";
+import {Navbar, NavbarBrand, NavbarContent, NavbarItem, Link, Button} from "@nextui-org/react";
+
 
 
 const links= [{
@@ -18,25 +20,36 @@ const links= [{
 
 function Navigation() {
   return (
-    <header className="flex items-center py-5 ">
-        <div className="bg-slate-600 mx-2">
-            <p className="">Logo</p>
-        </div>
-    
-    <nav className="w-full"> 
+    <Navbar>
+    <NavbarBrand>
+      
+      <p className="font-bold text-inherit">ACME</p>
+    </NavbarBrand>
+    <NavbarContent className="hidden sm:flex gap-4" justify="center">
+      <NavbarItem>
+      {links.map(({ label, route }) => (
+                <li key={route}>
+                    <Link color="foreground" href="#">
+          {label}
+        </Link>
+                </li>
+            ))}
         
-    <ul className="flex justify-center items-center gap-5">  
-        {links.map(({ label, route }) => (
-        <li key={route}>
-            <Link href={route} >
-            {label}
-            </Link>
-        </li>
-        ))}
-    </ul>
-    </nav>
-    
-    </header>
+      </NavbarItem>
+    </NavbarContent>
+    <NavbarContent justify="end">
+      <NavbarItem className="hidden lg:flex">
+        <Link href="#">Login</Link>
+      </NavbarItem>
+      <NavbarItem>
+        <Button as={Link} color="primary" href="#" variant="flat">
+          Sign Up
+        </Button>
+      </NavbarItem>
+    </NavbarContent>
+  </Navbar>
 )
 }
 export default Navigation
+
+
