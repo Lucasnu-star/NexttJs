@@ -1,3 +1,5 @@
+import Cardds from "./components/Cardds"
+
 
 
 
@@ -5,7 +7,7 @@
 function page() {
   return (
     <>
-        <h2 className="">Home</h2>
+        <Cardds/>
     </>
   )
 }
