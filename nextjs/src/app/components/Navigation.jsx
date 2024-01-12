@@ -29,10 +29,9 @@ export default function App() {
       </NavbarContent>
 
       <NavbarContent className="sm:hidden pr-3" justify="center">
-        <NavbarBrand>
-          
-          <p className="font-bold text-inherit">LOGO</p>
-        </NavbarBrand>
+      <NavbarBrand>
+        <img src="https://nextui-docs-v2.vercel.app/images/hero-card-complete.jpeg" alt="Logo" className="logo-img  h-10" />
+</NavbarBrand>
       </NavbarContent>
 
       <NavbarContent className="hidden sm:flex gap-4" justify="center">

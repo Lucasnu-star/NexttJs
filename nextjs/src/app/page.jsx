@@ -1,4 +1,5 @@
-import Cardds from "./components/Cardds"
+import SectionsMenu from "./components/SectionsMenu"
+
 
 
 
@@ -6,9 +7,9 @@ import Cardds from "./components/Cardds"
 
 function page() {
   return (
-    <>
-        <Cardds/>
-    </>
+    <section >
+        <SectionsMenu/>
+    </section>
   )
 }
 export default page
