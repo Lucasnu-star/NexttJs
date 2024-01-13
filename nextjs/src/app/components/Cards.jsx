@@ -20,8 +20,8 @@ const burguers = [
 
   function Cards() {
     return burguers.map((burguers) => ( 
-      <Card className="py-4 flex">
-        <CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
+      <Card className="py-4 flex ">
+        <CardHeader className="pb-0 pt-2 px-4 text-center  ">
         
           <section key={burguers.item}>
             <h2>{burguers.title}</h2>
@@ -30,7 +30,7 @@ const burguers = [
           </section>
 
         </CardHeader>
-        <CardBody className="overflow-visible py-2">
+        <CardBody className="overflow-visible py-2 flex items-center">
           <Image
             alt="Card background"
             className="object-cover rounded-xl"
@@ -38,6 +38,7 @@ const burguers = [
             width={270}
           />
         </CardBody>
+        <Button>Añadir al carrito</Button>
       </Card>
     ))}
  

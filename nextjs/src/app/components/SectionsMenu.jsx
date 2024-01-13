@@ -12,54 +12,9 @@ function SectionsMenu() {
   
     return (
       
-      <Accordion 
-      motionProps={{
-        variants: {
-          enter: {
-            y: 0,
-            opacity: 1,
-            height: "auto",
-            transition: {
-              height: {
-                type: "spring",
-                stiffness: 500,
-                damping: 30,
-                duration: 1,
-              },
-              opacity: {
-                easings: "ease",
-                duration: 1,
-              },
-            },
-          },
-          exit: {
-            y: -10,
-            opacity: 0,
-            height: 0,
-            transition: {
-              height: {
-                easings: "ease",
-                duration: 0.25,
-              },
-              opacity: {
-                easings: "ease",
-                duration: 0.3,
-              },
-            },
-          },
-        },
-      }}
-    >
-      <AccordionItem className="bg-slate-800" key="1" aria-label="Hamburguesas" title="Hamburguesas">
+     
       <Cards/>
-      </AccordionItem>
-      <AccordionItem key="2" aria-label="Accordion 2" title="Accordion 2">
-        {defaultContent}
-      </AccordionItem>
-      <AccordionItem key="3" aria-label="Accordion 3" title="Accordion 3">
-        {defaultContent}
-      </AccordionItem>
-    </Accordion>
+     
     
   );
 }

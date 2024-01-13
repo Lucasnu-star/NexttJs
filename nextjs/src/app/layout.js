@@ -1,5 +1,6 @@
 
 
+
 import Navigation from "./components/Navigation";
 import './globals.css'
 import { Providers } from "./provider";
@@ -15,6 +16,7 @@ export default function RootLayout({ children }) {
       <body>
       
       <Navigation/>
+      
       <Providers>
       {children}
       </Providers>

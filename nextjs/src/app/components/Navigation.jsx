@@ -1,8 +1,13 @@
-import React from "react";
+'use client'
+
+import React, { useState } from "react";
 import {Navbar, NavbarBrand, NavbarContent, NavbarItem, Link, Button, NavbarMenuToggle, NavbarMenu, NavbarMenuItem} from "@nextui-org/react";
 
 
 export default function App() {
+
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   const menuItems = [{
       item: 'Home',
       index: '/'
@@ -23,29 +28,26 @@ export default function App() {
   ];
 
   return (
-    <Navbar disableAnimation isBordered  className="text-black">
-      <NavbarContent className="sm:hidden" justify="start">
-        <NavbarMenuToggle />
-      </NavbarContent>
-
-      <NavbarContent className="sm:hidden pr-3" justify="center">
-      <NavbarBrand>
-        <img src="/public/LogoWindy.png" alt="Logo" className="logo-img  h-10" />
-</NavbarBrand>
+    <Navbar onMenuOpenChange={setIsMenuOpen}>
+      <NavbarContent>
+        <NavbarMenuToggle
+          aria-label={isMenuOpen ? "Close menu" : "Open menu"}
+          className="sm:hidden"
+        />
+        <NavbarBrand>
+          
+          <p className="font-bold text-inherit">ACME</p>
+        </NavbarBrand>
       </NavbarContent>
 
       <NavbarContent className="hidden sm:flex gap-4" justify="center">
-        <NavbarBrand>
-         
-          <p className="font-bold text-inherit">LOGO</p>
-        </NavbarBrand>
         <NavbarItem>
           <Link color="foreground" href="#">
             Features
           </Link>
         </NavbarItem>
         <NavbarItem isActive>
-          <Link href="#" aria-current="page" color="warning">
+          <Link href="#" aria-current="page">
             Customers
           </Link>
         </NavbarItem>
@@ -55,9 +57,12 @@ export default function App() {
           </Link>
         </NavbarItem>
       </NavbarContent>
-
-     
-
+      <NavbarContent justify="end">
+        <NavbarItem className="hidden lg:flex">
+          <Link href="#">Login</Link>
+        </NavbarItem>
+        
+      </NavbarContent>
       <NavbarMenu>
       {menuItems.map((menuItem, index) => ( 
   <NavbarMenuItem key={index}>
@@ -74,3 +79,7 @@ export default function App() {
     </Navbar>
   );
 }
+
+
+
+

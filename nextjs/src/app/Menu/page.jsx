@@ -1,8 +1,11 @@
+
 import Cards from "../components/Cards"
 
 function menu() {
-  return (
+  return (<>
+   
     <Cards/>
+    </>
   )
 }
 export default menu
