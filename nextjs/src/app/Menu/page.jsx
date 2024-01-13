@@ -1,6 +1,8 @@
+import Cards from "../components/Cards"
+
 function menu() {
   return (
-    <div>Menu</div>
+    <Cards/>
   )
 }
 export default menu

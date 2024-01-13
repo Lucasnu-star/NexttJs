@@ -1,3 +1,6 @@
+import React from "react";
+import {Card, CardHeader, CardBody, CardFooter, Divider, Link, Image, Button} from "@nextui-org/react";
+
 
 const burguers = [
     {
@@ -16,22 +19,27 @@ const burguers = [
 
 
   function Cards() {
-    return (
-      <div>
-        {burguers.map((burger) => (
-          <section className="flex border border-black py-5 " key={burger.item}>
-            <div className="mx-4 border border-black py-7">
-              <h1>{burger.title}</h1>
-              <p>{burger.description}</p>
-              <button>{burger.price}</button>
-            </div>
-            <div>
-              <img src="" alt="" />
-            </div>
+    return burguers.map((burguers) => ( 
+      <Card className="py-4 flex">
+        <CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
+        
+          <section key={burguers.item}>
+            <h2>{burguers.title}</h2>
+            <p>{burguers.description}</p>
+            <Button>{burguers.price}</Button>
           </section>
-        ))}
-      </div>
-    );
-  }
+
+        </CardHeader>
+        <CardBody className="overflow-visible py-2">
+          <Image
+            alt="Card background"
+            className="object-cover rounded-xl"
+            src="https://nextui-docs-v2.vercel.app/images/hero-card-complete.jpeg"
+            width={270}
+          />
+        </CardBody>
+      </Card>
+    ))}
+ 
   
   export default Cards;
