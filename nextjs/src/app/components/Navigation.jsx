@@ -30,7 +30,7 @@ export default function App() {
 
       <NavbarContent className="sm:hidden pr-3" justify="center">
       <NavbarBrand>
-        <img src="https://nextui-docs-v2.vercel.app/images/hero-card-complete.jpeg" alt="Logo" className="logo-img  h-10" />
+        <img src="/public/LogoWindy.png" alt="Logo" className="logo-img  h-10" />
 </NavbarBrand>
       </NavbarContent>
 

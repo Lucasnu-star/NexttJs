@@ -1,4 +1,7 @@
+'use client'
+
 import { Accordion, AccordionItem } from "@nextui-org/react";
+import Cards from "./Cards";
 
 
 
@@ -48,7 +51,7 @@ function SectionsMenu() {
       }}
     >
       <AccordionItem className="bg-slate-800" key="1" aria-label="Hamburguesas" title="Hamburguesas">
-     
+      <Cards/>
       </AccordionItem>
       <AccordionItem key="2" aria-label="Accordion 2" title="Accordion 2">
         {defaultContent}
