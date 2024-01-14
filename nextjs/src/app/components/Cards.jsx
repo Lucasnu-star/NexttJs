@@ -1,46 +1,29 @@
-import React from "react";
-import {Card, CardHeader, CardBody, CardFooter, Divider, Link, Image, Button} from "@nextui-org/react";
+export function Cards({ title, img, price, priceDuo, description }) {
+	return (
+		<section className="w-full grid items-center grid-cols-[1fr_55%] gap-5 p-6 bg-white mb-6 border-y shadow-sm md 2xl:rounded-md">
+			<div className="w-full flex justify-center">
+				<img src={img} alt="" className="rounded-lg shadow-md shadow-gray-300 w-full h-[150px] object-cover" />
+			</div>
+			<div className="flex flex-col">
+				<h3 className="text-base font-bold mb-1">{title}</h3>
 
+				<p className="text-sm text-[#757575]">{description}</p>
+				<div className="flex mt-3 gap-3 items-center w-full">
+					{price && (
+						<div className="flex gap-1 h-full flex-col items-center">
+							{priceDuo && <span className="text-sm text-[#757575] text-center">Individual</span>}
+							<span className="border w-fit px-4 p-1  rounded-lg bg-transparent text-[#757575] text-xs font-bold">${price}</span>
+						</div>
+					)}
 
-const burguers = [
-    {
-      item: 1,
-      title: 'Hamburguesa Clasica',
-      description: 'Una hamburguesa clasica con el mejor pan de la ciudad.',
-      price: '3000'
-    },
-    {
-      item: 2,
-      title: 'Hamburguesa Completa',
-      description: 'Una hamburguesa completa, lechuga, tomate, jamon y queso.',
-      price: '4500'
-    }
-  ];
-
-
-  function Cards() {
-    return burguers.map((burguers) => ( 
-      <Card className="py-4 flex ">
-        <CardHeader className="pb-0 pt-2 px-4 text-center  ">
-        
-          <section key={burguers.item}>
-            <h2>{burguers.title}</h2>
-            <p>{burguers.description}</p>
-            <Button>{burguers.price}</Button>
-          </section>
-
-        </CardHeader>
-        <CardBody className="overflow-visible py-2 flex items-center">
-          <Image
-            alt="Card background"
-            className="object-cover rounded-xl"
-            src="https://nextui-docs-v2.vercel.app/images/hero-card-complete.jpeg"
-            width={270}
-          />
-        </CardBody>
-        <Button>Añadir al carrito</Button>
-      </Card>
-    ))}
- 
-  
-  export default Cards;
+					{priceDuo && (
+						<div className="flex gap-1 h-full flex-col items-center">
+							<span className="text-sm text-[#757575] text-center">Para compartir</span>
+							<span className="border w-fit px-4 p-1 rounded-lg bg-transparent text-[#757575] text-xs font-bold">${priceDuo}</span>
+						</div>
+					)}
+				</div>
+			</div>
+		</section>
+	)
+}

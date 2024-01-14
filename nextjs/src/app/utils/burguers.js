@@ -1,0 +1,140 @@
+export const burguers = [
+    {
+        id: 1,
+        nombre: 'Sandwich Clásico',
+        precio: 4500,
+        description: 'Sandwich de milanesa clásica. Sencillamente delicioso.',
+        img: './imgComida.jpg',
+        items: [
+			{
+				nombre: 'Sandwich Clásico',
+				precio: 4500,
+				description: 'Sandwich de milanesa clásica. Sencillamente delicioso.',
+				img: './imgComida.jpg',
+			},
+			{
+				nombre: 'Sandwich Completo',
+				precio: 5300,
+				description: 'Sandwich de milanesa con jamón, queso, huevo a la plancha, lechuga y tomate.',
+				img: './imgComida.jpg',
+			},
+			{
+				nombre: 'Sandwich La Boca',
+				precio: 6000,
+				description: 'Sandwich de milanesa con panceta crocante, cebolla caramelizada, cheddar, tomate y lechuga.',
+				img: './imgComida.jpg',
+			},
+			{
+				nombre: 'Lomo Grillé Clásico',
+				precio: 5500,
+				description: 'Sandwich de lomo grille clásico, Sencillamente delicioso.',
+				img: './imgComida.jpg',
+			},
+			{
+				nombre: 'Lomo Grillé Completo',
+				precio: 6100,
+				description: 'Sandwich de lomo grillé con jamon, queso, huevo a la plancha, lechuga y tomate.',
+				img: './imgComida.jpg',
+			},
+			{
+				nombre: 'Lomo Grillé "LA BOCA"',
+				precio: 6600,
+				description: 'Sandwich de lomo grillé con panceta crocante, cebolla caramelizada, cheddar, tomate y lechuga.',
+				img: './imgComida.jpg',
+			},
+			{
+				nombre: 'Vegetariano',
+				precio: 4100,
+				description: 'Sandwich vegetariano con queso dambo, huevo a la plancha, lechuga, tomate y palta.',
+				img: './imgComida.jpg',
+			},
+			{
+				nombre: 'Vegano',
+				precio: 4500,
+				description: 'Sandwich vegano con pepino, zanahoria, cebolla caramelizada, palta, lechuga y tomate.',
+				img: './imgComida.jpg',
+			},
+			{
+				nombre: 'Jamón y Queso',
+				precio: 3200,
+				description: 'Sandwich de jamón y queso. Sencillamente delicioso.',
+				img: './imgComida.jpg',
+			},
+			{
+				nombre: 'Primavera',
+				precio: 3200,
+				description: 'Sandwich primavera con jamón, queso, huevo, lechuga y tomate.',
+				img: './imgComida.jpg',
+			},
+		],
+    },
+    {
+        id: 2,
+        nombre: 'Sandwich Completo',
+        precio: 5300,
+        description: 'Sandwich de milanesa con jamón, queso, huevo a la plancha, lechuga y tomate.',
+        img: './imgComida.jpg',
+        items: [
+			{
+				nombre: 'Sandwich Clásico',
+				precio: 4500,
+				description: 'Sandwich de milanesa clásica. Sencillamente delicioso.',
+				img: './imgComida.jpg',
+			},
+			{
+				nombre: 'Sandwich Completo',
+				precio: 5300,
+				description: 'Sandwich de milanesa con jamón, queso, huevo a la plancha, lechuga y tomate.',
+				img: './imgComida.jpg',
+			},
+			{
+				nombre: 'Sandwich La Boca',
+				precio: 6000,
+				description: 'Sandwich de milanesa con panceta crocante, cebolla caramelizada, cheddar, tomate y lechuga.',
+				img: './imgComida.jpg',
+			},
+			{
+				nombre: 'Lomo Grillé Clásico',
+				precio: 5500,
+				description: 'Sandwich de lomo grille clásico, Sencillamente delicioso.',
+				img: './imgComida.jpg',
+			},
+			{
+				nombre: 'Lomo Grillé Completo',
+				precio: 6100,
+				description: 'Sandwich de lomo grillé con jamon, queso, huevo a la plancha, lechuga y tomate.',
+				img: './imgComida.jpg',
+			},
+			{
+				nombre: 'Lomo Grillé "LA BOCA"',
+				precio: 6600,
+				description: 'Sandwich de lomo grillé con panceta crocante, cebolla caramelizada, cheddar, tomate y lechuga.',
+				img: './imgComida.jpg',
+			},
+			{
+				nombre: 'Vegetariano',
+				precio: 4100,
+				description: 'Sandwich vegetariano con queso dambo, huevo a la plancha, lechuga, tomate y palta.',
+				img: './imgComida.jpg',
+			},
+			{
+				nombre: 'Vegano',
+				precio: 4500,
+				description: 'Sandwich vegano con pepino, zanahoria, cebolla caramelizada, palta, lechuga y tomate.',
+				img: './imgComida.jpg',
+			},
+			{
+				nombre: 'Jamón y Queso',
+				precio: 3200,
+				description: 'Sandwich de jamón y queso. Sencillamente delicioso.',
+				img: './imgComida.jpg',
+			},
+			{
+				nombre: 'Primavera',
+				precio: 3200,
+				description: 'Sandwich primavera con jamón, queso, huevo, lechuga y tomate.',
+				img: './imgComida.jpg',
+			},
+		],
+    }
+  ];
